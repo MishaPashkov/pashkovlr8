@@ -1,0 +1,64 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.player, .button {
+    width: 33.3%;
+    max-width: auto;
+    height: auto;
+    flex-direction: column;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+.victory {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    background-color: green;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+.number {
+    width: 100%;
+    max-width: 150px;
+    min-height: 150px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    border: 5px solid;
+}
+.player, .button, .victory, .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.but {
+    width: 100%;
+    max-width: 300px;
+    height: 75px;
+    background-color: yellow;
+    border: none;
+    border-radius: 15px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.but:hover {
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.5);
+}
+@media (max-width: 500px) {
+    .but {
+        font-size: 24px;
+        height: 60px;
+    }
+    .victory {
+        font-size: 20px;
+        height: 40px;
+    }
+    .number {
+        font-size: 24px;
+    }
+}
