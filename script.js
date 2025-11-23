@@ -1,4 +1,4 @@
-let getName = prompt("Your name");
+let getName = prompt("Your name") || "User";
 let userName = document.getElementById("userName");
 userName.textContent = getName;
 let uv = document.getElementById("uVictory");
@@ -42,4 +42,5 @@ function resetGame() {
   cv.textContent = cCount;
   document.getElementById("uNumber").textContent = "";
   document.getElementById("cNumber").textContent = "";
+
 }
